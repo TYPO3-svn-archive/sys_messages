@@ -1,1 +1,0 @@
-- Shows "Handbuch fur redaktøre", admin users sees other links?
