@@ -1,0 +1,22 @@
+**************
+TODO
+*************
+
+- Option to UPDATE current extension, not OVERRIDE it all.
+  - SOLUTION to this: Simply let the Kickstarter READ all files except certain ones from the current extension - and thus rewrite existing files we want to keep. (should show which files are changed)
+- Write default "doc/index.html" (+ stylesheet and default info) + default SXW file + default TODO.txt (requires EM API for this)
+- Clean up/test the default code made by the EM. In particular, write single-quotes and function comments, XHTML etc. / DBAL
+- Store the serialized PHP array in a session instead of the page form. (See Luites mails, Message-Id: <5.1.1.6.2.20021102181357.00bcc598@pop.students.phil.uu.nl>)
+- Check again that author name/email is properly written to the extension under ALL conditions: "If you create an extension of your own and insert an e-mail-adress other than the default one from your profile in the general information section it's not correctly display if you go to "View results" page in the kickstarter wizard." (Message-ID: <B9F6ECF8.12EB1%ab@mbfg.de>, Message-ID: <B9F6E6FE.12EA4%ab@mbfg.de>)
+- Documents: Extension Programming Guide (getting started, possibilities etc. )
+	Note about Extensions Programming Guide/From Dennis Petersen (fessorman):
+	- I would think these steps are important (but I may be wrong):
+	- 1. Determine how the framework should be made (Database structure, descriptions, manuals etc...)
+	- 2. Resuming your work later.
+	- 3. Expanding the logic by editing the generated files
+	- 4. Testing
+	- 5. Packaging the extension
+	- 6. Uploading the extension for review
+		- (Steps 3 - 6 should the be iterated I would guess to make the changes that others recommends)
+	- 7. Releasing the extension for public use
+	- 8. Expanding the extension - creating new versions.
