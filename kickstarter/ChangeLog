@@ -1,0 +1,18 @@
+2004-11-23  Ingmar Schlecht  <ingmars@web.de>
+
+	* Finetuning new modularity of the Kickstarter.
+
+2004-11-18  Ingmar Schlecht  <ingmars@web.de>
+
+	* Making the Kickstarter modular.
+		- Outsourced all add_cat_*() and renderExtPart_*() functions into separate section classes.
+		- Created ext_localconf.php where all the sections are registered.
+
+2004-08-22  Ingmar Schlecht  <ingmars@web.de>
+
+	* Fine-tuning the way of interaction between EM and Kickstarter.
+		-> Added option "Edit in Kickstarter" to the upper right menu in the single extension view of the EM
+
+2004-08-20  Ingmar Schlecht  <ingmars@web.de>
+
+	* Initial import to CVS.

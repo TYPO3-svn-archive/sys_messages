@@ -1,0 +1,68 @@
+a:2:{s:4:"meta";a:3:{s:5:"title";s:0:"";s:5:"descr";s:0:"";s:7:"options";a:2:{s:10:"usageCount";N;s:19:"includeCodeAbstract";N;}}s:5:"files";a:1:{s:14:"MD5_4e853e070d";a:4:{s:8:"filename";s:21:"class.tx_systodos.php";s:8:"filesize";i:58005;s:6:"header";a:5:{s:4:"text";s:1:"
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:2:{i:0;s:45:"@author Kasper Skårhøj <kasperYYYY@typo3.com>";i:1;s:55:"@author Christian Jul Jensen <christian(at)jul(dot)net>";}s:11:"other_index";a:1:{s:7:"@author";a:2:{i:0;s:37:"Kasper Skårhøj <kasperYYYY@typo3.com>";i:1;s:47:"Christian Jul Jensen <christian(at)jul(dot)net>";}}}s:3:"DAT";a:23:{i:1;a:7:{s:6:"header";s:41:"class tx_systodos extends mod_user_task {";s:5:"class";i:1;s:11:"parentClass";s:11:"tx_systodos";s:7:"content";s:0:"";s:12:"content_size";i:136;s:13:"content_lines";i:6;s:6:"atLine";i:40;}i:3;a:7:{s:6:"header";s:26:"function overview_main() {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:3:{s:4:"text";s:94:"
+
+Generates the overview list of todo items for the taskcenter, called from task/overview.php
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:4:"HTML";}}s:7:"content";s:0:"";s:12:"content_size";i:255;s:13:"content_lines";i:8;s:6:"atLine";i:52;}i:5;a:7:{s:6:"header";s:17:"function main() {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:3:{s:4:"text";s:51:"
+
+Main function called by the taskcenter framework
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}}s:7:"content";s:0:"";s:12:"content_size";i:202;s:13:"content_lines";i:5;s:6:"atLine";i:66;}i:7;a:6:{s:6:"header";s:27:"function loadDefinition() {";s:11:"parentClass";s:11:"tx_systodos";s:7:"content";s:0:"";s:12:"content_size";i:310;s:13:"content_lines";i:11;s:6:"atLine";i:77;}i:9;a:6:{s:6:"header";s:25:"function loadExecutor() {";s:11:"parentClass";s:11:"tx_systodos";s:7:"content";s:0:"";s:12:"content_size";i:381;s:13:"content_lines";i:15;s:6:"atLine";i:94;}i:11;a:7:{s:6:"header";s:27:"function renderTaskList() {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:5:{s:4:"text";s:55:"
+
+Generate list of unfinished tasks for current user
+
+
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"String";i:1;s:4:"HTML";}s:5:"other";a:1:{i:0;s:132:"@todo instead of showing picture depending on who created the record, it's probably more interesting to display who touched it last.";}s:11:"other_index";a:1:{s:5:"@todo";a:1:{i:0;s:126:"instead of showing picture depending on who created the record, it's probably more interesting to display who touched it last.";}}}s:7:"content";s:0:"";s:12:"content_size";i:918;s:13:"content_lines";i:19;s:6:"atLine";i:116;}i:13;a:7:{s:6:"header";s:32:"function todos_link($str, $id) {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:3:{s:4:"text";s:34:"
+
+Make $str link to task with $id
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"String";i:1;s:26:"$str: Text to wrap in link";}i:1;a:2:{i:0;s:3:"Int";i:1;s:27:"$id: uid of task to link to";}}s:6:"return";a:2:{i:0;s:6:"String";i:1;s:11:"link (HTML)";}}s:7:"content";s:0:"";s:12:"content_size";i:145;s:13:"content_lines";i:4;s:6:"atLine";i:143;}i:15;a:7:{s:6:"header";s:96:"function tasks_makeTargetSelector($be_user_Array, $be_group_Array, $type, $returnOptsOnly = 0) {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:3:{s:4:"text";s:65:"
+
+Generate list of possible target users and groups for the task
+";s:5:"param";a:4:{i:0;a:2:{i:0;s:5:"Array";i:1;s:144:"$be_user_Array: Array of possible users, each entry containing the keys/fields: username, usergroup, usergroup_cached_list, uid, realName, email";}i:1;a:2:{i:0;s:5:"Array";i:1;s:91:"$be_group_Array:Array of possible groups, each entry containing the keys/fields: title, uid";}i:2;a:2:{i:0;s:6:"String";i:1;s:46:"$type: ??? Is set to NEW on new tasks, but ...";}i:3;a:2:{i:0;s:4:"Bool";i:1;s:67:"$returnOptsOnly: return only the options, not the whole selectorbox";}}s:6:"return";a:2:{i:0;s:6:"String";i:1;s:49:"The selectorbox, possibly only the options (HTML)";}}s:7:"content";s:0:"";s:12:"content_size";i:1210;s:13:"content_lines";i:24;s:6:"atLine";i:157;}i:17;a:7:{s:6:"header";s:24:"function renderTasks() {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:3:{s:4:"text";s:30:"
+
+render a list of main tasks
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:6:"(HTML)";}}s:7:"content";s:0:"";s:12:"content_size";i:925;s:13:"content_lines";i:32;s:6:"atLine";i:187;}i:19;a:7:{s:6:"header";s:62:"function todos_finalizeWorkflow($workflowRecord, $relRecord) {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:5:{s:4:"text";s:26:"
+
+[Describe function...]
+
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"[type]";i:1;s:20:"$workflowRecord: ...";}i:1;a:2:{i:0;s:6:"[type]";i:1;s:15:"$relRecord: ...";}}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:1:{i:0;s:57:"@todo some of this should probably be controlled by wfDef";}s:11:"other_index";a:1:{s:5:"@todo";a:1:{i:0;s:51:"some of this should probably be controlled by wfDef";}}}s:7:"content";s:0:"";s:12:"content_size";i:1537;s:13:"content_lines";i:41;s:6:"atLine";i:228;}i:21;a:7:{s:6:"header";s:47:"function todos_beginWorkflow($workflowRecord) {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:5:{s:4:"text";s:50:"
+
+Creates the new record / version of the record
+
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:5:"array";i:1;s:58:"$workflowRecord: the db record of the workflow as an array";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:3:"...";}s:5:"other";a:1:{i:0;s:76:"@todo dependent on the workflow record... should get info from wfDef instead";}s:11:"other_index";a:1:{s:5:"@todo";a:1:{i:0;s:70:"dependent on the workflow record... should get info from wfDef instead";}}}s:7:"content";s:0:"";s:12:"content_size";i:767;s:13:"content_lines";i:16;s:6:"atLine";i:277;}i:23;a:7:{s:6:"header";s:39:"function todos_processIncoming($tUid) {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:3:{s:4:"text";s:64:"
+
+Procees the incoming data, writing logs changing target user,
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"[type]";i:1;s:10:"$tUid: ...";}}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}}s:7:"content";s:0:"";s:12:"content_size";i:13318;s:13:"content_lines";i:311;s:6:"atLine";i:300;}i:25;a:7:{s:6:"header";s:49:"function todos_workflowTitle($todoTypes, $type) {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:3:{s:4:"text";s:25:"
+
+[Describe function...]
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"[type]";i:1;s:15:"$todoTypes: ...";}i:1;a:2:{i:0;s:6:"[type]";i:1;s:10:"$type: ...";}}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}}s:7:"content";s:0:"";s:12:"content_size";i:417;s:13:"content_lines";i:11;s:6:"atLine";i:619;}i:27;a:7:{s:6:"header";s:47:"function todos_displayTodo($todoTypes, $tUid) {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:3:{s:4:"text";s:25:"
+
+[Describe function...]
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"[type]";i:1;s:15:"$todoTypes: ...";}i:1;a:2:{i:0;s:6:"[type]";i:1;s:10:"$tUid: ...";}}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}}s:7:"content";s:0:"";s:12:"content_size";i:3550;s:13:"content_lines";i:67;s:6:"atLine";i:638;}i:29;a:7:{s:6:"header";s:94:"function todos_printStatus($rel_row, $todo_row, $workflow_row, $tUid, $countOfInstances = 0) {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:3:{s:4:"text";s:25:"
+
+[Describe function...]
+";s:5:"param";a:5:{i:0;a:2:{i:0;s:6:"[type]";i:1;s:13:"$rel_row: ...";}i:1;a:2:{i:0;s:6:"[type]";i:1;s:14:"$todo_row: ...";}i:2;a:2:{i:0;s:6:"[type]";i:1;s:18:"$workflow_row: ...";}i:3;a:2:{i:0;s:6:"[type]";i:1;s:10:"$tUid: ...";}i:4;a:2:{i:0;s:6:"[type]";i:1;s:22:"$countOfInstances: ...";}}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}}s:7:"content";s:0:"";s:12:"content_size";i:9800;s:13:"content_lines";i:191;s:6:"atLine";i:716;}i:31;a:7:{s:6:"header";s:28:"function negateList($list) {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:3:{s:4:"text";s:127:"
+
+Negate commaseperated list of integers. Negative uids are used to indicate groups, in opposition to users, in various lists.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"String";i:1;s:38:"$list: commaseperated list of integers";}}s:6:"return";a:2:{i:0;s:6:"String";i:1;s:39:"commaseperated list of negated integers";}}s:7:"content";s:0:"";s:12:"content_size";i:189;s:13:"content_lines";i:8;s:6:"atLine";i:914;}i:33;a:7:{s:6:"header";s:94:"function exec_todos_getQueryForTodoRels($extraWhere = "", $selectFields = "", $allowOwn = 0) {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:3:{s:4:"text";s:79:"
+
+Build and execute query for selecting todo items related to the current user
+";s:5:"param";a:3:{i:0;a:2:{i:0;s:6:"String";i:1;s:37:"$extraWhere:   Extra where conditions";}i:1;a:2:{i:0;s:6:"String";i:1;s:32:"$selectFields: Fields to select.";}i:2;a:2:{i:0;s:4:"Bool";i:1;s:101:"$allowOwn:    If set tasks created by the user is also selected, else only tasks assigned to the user";}}s:6:"return";a:2:{i:0;s:8:"Resource";i:1;s:39:"pointer         Pointer to mysql result";}}s:7:"content";s:0:"";s:12:"content_size";i:1198;s:13:"content_lines";i:18;s:6:"atLine";i:931;}i:35;a:7:{s:6:"header";s:39:"function todos_getReviewUsers($wfUid) {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:3:{s:4:"text";s:56:"
+
+Get allowed review users for workflow with uid $wfUid
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:3:"Int";i:1;s:30:"$wfUid: Uid on workflow record";}}s:6:"return";a:2:{i:0;s:5:"Array";i:1;s:76:"Array of users keyed by the uid, containg the fields: uid, username,realname";}}s:7:"content";s:0:"";s:12:"content_size";i:491;s:13:"content_lines";i:15;s:6:"atLine";i:956;}i:37;a:7:{s:6:"header";s:48:"function todos_displayLists($todoTypes, $tUid) {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:3:{s:4:"text";s:56:"
+
+Generate dipslaying of main todo screen (right frame)
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:5:"Array";i:1;s:81:"$todoTypes: Array of available todo items (for generating list to make new items)";}i:1;a:2:{i:0;s:3:"Int";i:1;s:84:"$tUid: Uid for selected task (negative uid indicate ingoing task, positive outgoing)";}}s:6:"return";a:2:{i:0;s:6:"String";i:1;s:4:"HTML";}}s:7:"content";s:0:"";s:12:"content_size";i:6344;s:13:"content_lines";i:126;s:6:"atLine";i:979;}i:39;a:7:{s:6:"header";s:54:"function todos_createForm($todoTypes, $editRec = '') {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:3:{s:4:"text";s:183:"
+
+Generate forms for creating new todo items, if a workflow_type
+has been submitted or a record to edit has been passed, then the
+form is made, else a list of possible todos is shown
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:5:"Array";i:1;s:40:"$todoTypes: list of available todo items";}i:1;a:2:{i:0;s:5:"Array";i:1;s:64:"$editRec: Array containg the details of the record to be edited.";}}s:6:"return";a:2:{i:0;s:6:"String";i:1;s:56:"Form that let's you create/edit a workflow record (HTML)";}}s:7:"content";s:0:"";s:12:"content_size";i:6835;s:13:"content_lines";i:104;s:6:"atLine";i:1115;}i:41;a:7:{s:6:"header";s:31:"function linkTodos($str, $id) {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:3:{s:4:"text";s:25:"
+
+[Describe function...]
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"[type]";i:1;s:9:"$str: ...";}i:1;a:2:{i:0;s:6:"[type]";i:1;s:8:"$id: ...";}}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}}s:7:"content";s:0:"";s:12:"content_size";i:96;s:13:"content_lines";i:4;s:6:"atLine";i:1227;}i:43;a:4:{s:6:"header";s:50:"function getEditRedirectUrlForReference($recRef) {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:3:{s:4:"text";s:25:"
+
+[Describe function...]
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"[type]";i:1;s:12:"$recRef: ...";}}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}}s:6:"atLine";i:1238;}i:45;a:7:{s:6:"header";s:46:"function printUserGroupName($uid, $icon = 0) {";s:11:"parentClass";s:11:"tx_systodos";s:4:"cDat";a:3:{s:4:"text";s:34:"
+
+Display user or group name with
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"[type]";i:1;s:9:"$uid: ...";}i:1;a:2:{i:0;s:6:"[type]";i:1;s:10:"$icon: ...";}}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}}s:7:"content";s:0:"";s:12:"content_size";i:736;s:13:"content_lines";i:14;s:6:"atLine";i:1256;}}}}}
